@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Mood Selector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <header class="heading">
+        <img
+          src="images/Cute-hedgehog.jpg"
+          alt="A picture of a cute hedgehog sitting on someones hand in a sunflower field"
+        />
+        <h1>Pet Mood Selector</h1>
+      </header>
+
+      <main class="form-container">
+        <form action="">
+          <div class="happy mood-space">
+            <label for="happy">Happy</label>
+            <input type="radio" name="mood" id="happy" value="happy" />
+          </div>
+          <div class="sad mood-space">
+            <label for="sad">Sad</label>
+            <input type="radio" name="mood" id="sad" value="sad" />
+          </div>
+
+          <div class="sleepy mood-space">
+            <label for="sleepy mood-space">Sleepy</label>
+            <input type="radio" name="mood" id="sleepy" value="sleepy" />
+          </div>
+
+          <div class="excited mood-space">
+            <label for="excited">Excited</label>
+            <input type="radio" name="mood" id="excited" value="excited" />
+          </div>
+        </form>
+
+        <button id="showMoodBtn">Show mood</button>
+
+        <div id="modal" class="hidden">
+          <button id="closeModal">X</button>
+          <div class="currentMood">
+            <img src="" alt="" />
+            <p>Your pet is feeling: <span class="currentMood-text"></span></p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

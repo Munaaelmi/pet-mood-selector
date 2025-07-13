@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outer-container {
+  border: 1px solid green;
+  margin: 100px auto;
+  width: 50%;
+  height: auto;
+}
+
+header {
+  margin: 50px auto;
+}
+
+header img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.heading {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.heading h1 {
+  align-self: center;
+  font-size: 50px;
+}
+
+.form-container {
+  /* border: 1px solid firebrick; */
+  padding: 10px;
+  margin: 50px auto;
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin-top: 20px;
+  padding: 8px 15px;
+}
+
+.mood-space {
+  display: flex;
+  gap: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#modal {
+  position: fixed;
+  background-color: antiquewhite;
+}
