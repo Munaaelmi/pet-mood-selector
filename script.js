@@ -4,6 +4,7 @@ const closeModal = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
 const currentMood = document.querySelector("currentMood");
 const currentMoodText = document.querySelector(".currentMood-text");
+const image = document.querySelector(".pet-image");
 
 showMoodBtn.addEventListener("click", ischecked);
 
@@ -17,9 +18,11 @@ function ischecked() {
   if (selectedMood) {
     modal.classList.remove("hidden");
     currentMoodText.textContent = selectedMood;
+    image.setAttribute("src", `./images/${selectedMood}.jpeg`);
   }
 }
 
 function modalClosed() {
-  modal.style.display = "none";
+  modal.classList.add("hidden");
+  form.reset();
 }
